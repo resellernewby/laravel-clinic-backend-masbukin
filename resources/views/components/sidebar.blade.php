@@ -16,9 +16,9 @@
                         <a class="nav-link"
                             href="{{ url('dashboard-general-dashboard') }}">General Dashboard</a>
                     </li>
-                    <li class="{{ Request::is('dashboard-ecommerce-dashboard') ? 'active' : '' }}">
+                    <li class="{{ Request::is('users') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('dashboard-ecommerce-dashboard') }}">Ecommerce Dashboard</a>
+                            href="{{ route('users.index') }}">Users</a>
                     </li>
                 </ul>
             </li>            
