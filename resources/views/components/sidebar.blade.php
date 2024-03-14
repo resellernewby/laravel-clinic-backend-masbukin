@@ -20,6 +20,10 @@
                         <a class="nav-link"
                             href="{{ route('users.index') }}">Users</a>
                     </li>
+                    <li class="{{ Request::is('doctors') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ route('doctors.index') }}">Doctors</a>
+                    </li>
                 </ul>
             </li>            
         </ul>        
